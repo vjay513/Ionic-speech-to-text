@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-toolbar>
+      <ion-title>
+          Refri- Speech to Text
+        </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="button-bar">
+      <ion-button ion-button full (click)="getPermissions()">Get Permissions</ion-button>
+      <ion-button ion-button full (click)="startListening()">Start Listening</ion-button>
+      <ion-button ion-button full (click)="stopListening()" >Click to speak</ion-button>
+    </div>
+      <ion-card>
+        <ion-card-header>This is what I understand..</ion-card-header>
+        <ion-card-content>
+          <ion-list>
+            <ion-item *ngFor="let match of matches">
+              {{match}}
+            </ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+</ion-content>

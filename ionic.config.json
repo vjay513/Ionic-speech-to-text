@@ -1,0 +1,7 @@
+{
+  "name": "Refri",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
